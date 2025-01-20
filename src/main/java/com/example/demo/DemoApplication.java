@@ -25,6 +25,11 @@ public class DemoApplication {
 		System.out.println(ms.topSongByDate(LocalDate.of(2023, 12, 25)));
 		System.out.println(ms.topSongByArtist("Rohan"));
 		System.out.println(ms.topSong());
+
+		CsvReader playlist = new CsvReader();
+		TsvReader playlist1 = new TsvReader();
+		playlist.read();
+		playlist1.read();
 	}
 
 }
